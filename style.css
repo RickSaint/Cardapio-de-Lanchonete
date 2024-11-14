@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('img/lanchonete.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold; 
+    color: #ffffff; 
+    text-transform: uppercase; 
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+    font-family: Stencil Std; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+main > section.items h4 {
+    text-align: center;
+    margin-top: 0;
+    width: 100%;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+main > section.items {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid lightgrey;
+    padding: 20px;
+    max-width: 500px;
+    min-width: 300px;
+    justify-content: center;
+    
+}
+
+section.items .product {
+    border: 1px solid lightgrey;
+    margin: 6px;
+    flex: 0 0 calc(33.333% - 24px);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 30px;
+}
+
+section.items .product.selected {
+    border: 2px solid rgb(10 162 27)
+}
+
+section.items .photo img {
+    max-width: 100px;
+}
+
+section.items .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: font-Stencil Std;
+}
+
+section.items  .description .price {
+    font-weight: bold;
+    margin: 4px auto;
+}
+
+section.items  .description .quantity-area {
+    margin: 8px auto;
+    height: 14px;
+}
+
+section.items  .description .quantity-area button {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    border: 1px solid #ffffff;
+    margin-bottom: 0px;
+}
+
+section.items  .description .quantity-area .quantity {
+    font-weight: bold;
+    margin: 0 4px;
+    margin-bottom: 15px;
+}
+
+
+section.summary {
+    background: linear-gradient(to bottom, #7a7a7a33, #45250f); 
+    padding: 20px;
+    min-height: 150px;
+    min-width: 200px;
+    text-align: center;
+    margin-left: 50px;
+    font-family: font-Stencil Std;
+    font-size: 25px;
+    color: white;
+}
+
+section.summary table {
+    width: 100%;
+    padding-top: 12px;
+    font-size: 15px;
+    margin: auto;
+}
+
+.resume {
+    font-size: font-Stencil Std;
+
+}
+
+section.summary table tbody tr:last-of-type th {
+    border-top: 1px solid black;
+    padding-top: 4px;
+}
+
+#container {
+    background: linear-gradient(to bottom, #7a7a7a33, #45250f); 
+    padding: 20px; 
+    border-radius: 40px; 
+}
+
+
